@@ -1,3 +1,2 @@
 # MyBlog
-
-![](./images/hero.png)
+![](./images/logo.png)

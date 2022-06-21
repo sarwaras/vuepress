@@ -274,11 +274,39 @@ npm install
 
 :::
 
+### 选项卡
+
+::: tabs
+
+@tab 标题 1
+
+<!-- 此处，选项卡 1 的标题“标题 1”将用作值。 -->
+
+<!-- tab 1 内容 -->
+
+@tab 标题 2#值 2
+
+<!-- 这里，tab 2 的标题将是 “标题 2”，但它会使用 “值 2” 作为选项卡的值-->
+
+<!-- tab 2 内容 -->
+
+:::
+
+#### 创建流程图
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
 
-### 使用 geoJSON 创建地图
+### 使用 geoJSON 创建图标
 
-```geoJSON
+```geojson
 {
   "type": "FeatureCollection",
   "features": [

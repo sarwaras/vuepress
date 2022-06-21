@@ -1,39 +1,60 @@
 {
-  "hash": "3c509650",
-  "browserHash": "a35b8f6b",
+  "hash": "d13d7b75",
+  "browserHash": "74a09543",
   "optimized": {
+    "@giscus/vue": {
+      "src": "../../../../node_modules/@giscus/vue/dist/index.es.js",
+      "file": "@giscus_vue.js",
+      "fileHash": "a8b8dd05",
+      "needsInterop": false
+    },
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "a5dbe689",
+      "fileHash": "b02281a4",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "5de27979",
+      "fileHash": "a8083139",
       "needsInterop": false
     },
     "@vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "@vueuse_core.js",
-      "fileHash": "223d2bb4",
+      "fileHash": "ef81abd8",
+      "needsInterop": false
+    },
+    "ts-debounce": {
+      "src": "../../../../node_modules/ts-debounce/dist/src/index.esm.js",
+      "file": "ts-debounce.js",
+      "fileHash": "35019658",
+      "needsInterop": false
+    },
+    "tsparticles": {
+      "src": "../../../../node_modules/tsparticles/esm/index.js",
+      "file": "tsparticles.js",
+      "fileHash": "6c810181",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "d8c9c2ed",
+      "fileHash": "2a06beda",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "116e714b",
+      "fileHash": "c5f75b2f",
       "needsInterop": false
     }
   },
   "chunks": {
+    "giscus.es-ZXIR5RZO": {
+      "file": "giscus_es-ZXIR5RZO.js"
+    },
     "chunk-WMZTZZNO": {
       "file": "chunk-WMZTZZNO.js"
     },
@@ -43,8 +64,8 @@
     "chunk-VNKCJBW6": {
       "file": "chunk-VNKCJBW6.js"
     },
-    "chunk-FEFTYQ2P": {
-      "file": "chunk-FEFTYQ2P.js"
+    "chunk-NRPQOLJN": {
+      "file": "chunk-NRPQOLJN.js"
     }
   }
 }
