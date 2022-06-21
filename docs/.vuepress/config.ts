@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress"
 import { path } from "@vuepress/utils"
 // import { defaultTheme } from "@vuepress/theme-default"
 import knznTheme from "vuepress-theme-knzn"
+// import {mdEnhance , hopetheme} from "vuepress-theme-hope"
 const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics")
 
 export default defineUserConfig({
@@ -65,6 +66,13 @@ export default defineUserConfig({
 
   //  博主 配置的主题
   theme: knznTheme({
+    // plugins: {
+    //   mdEnhance: {
+    //     // 添加选项卡支持
+    //     tabs: true,
+    //   },
+    // },
+
     // logo
     logo: "/images/Twitter-logo.svg",
     darkLogo: "/images/logo-dark.svg",
@@ -131,7 +139,6 @@ export default defineUserConfig({
   }),
 
   //  插件的使用
-
   plugins: [
     googleAnalyticsPlugin({
       id: "G-XXXXXXXXXX",
