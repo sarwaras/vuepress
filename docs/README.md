@@ -1,6 +1,220 @@
 # hi ~
 ## hello vuepress
 
+### 创建表格
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+- note :
+您可以在标头行中横线的左侧、右侧或两侧加入冒号 :，靠左、靠右或居中对齐列中的文本。
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+### 字体
+**这是粗体**
+
+*这是斜体*
+
+~~这是错误文本~~
+
+***所有这些文本都很重要***
+
+<sub>这是下标文本</sub>
+
+<sup>这是上标文本</sup>
+
+**此文本 _非常_ 重要**
+
+### 链接
+<!-- 相对路径 -->
+[首页](../README.md)  
+[配置参考](../reference/config.md)  
+[快速上手](./getting-started.md)  
+<!-- 绝对路径 -->
+[指南](/zh/guide/README.md)  
+[配置参考 > markdown.links](/zh/reference/config.md#links)  
+<!-- URL -->
+[GitHub](https://github.com) 
+
+### 表情
+VuePress 2 已经发布 :tada: ！
+
+祝一切顺利！ :grinning:
+
+# 一级标题
+## 二级标题
+### 三级标题
+
+#### 四级标题
+### 目录
+[[toc]]
+
+### 代码块
+```ts{1,6-8}
+import { defaultTheme, defineUserConfig } from 'vuepress'
+
+export default defineUserConfig({
+  title: '你好， VuePress',
+
+  theme: defaultTheme({
+    logo: 'https://vuejs.org/images/logo.png',
+  }),
+})
+```
+* note:  行数范围标记的例子：
+
+- 行数范围： {5-8}
+- 多个单行： {4,7,9}
+- 组合： {4,7-13,16,23-27,40}
+
+#### 行号
+
+##### 输入：
+```ts
+// 行号默认是启用的
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+
+-  no-line-numbers
+// 行号被禁用
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
+
+##### 输出： 
+```ts
+// 行号默认是启用的
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
+
+```ts:no-line-numbers
+// 行号被禁用
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
+
+#### 添加 v-pre
+
+```md
+<!-- 默认情况下，这里会被保持原样 -->
+1 + 2 + 3 = {{ 1 + 2 + 3 }}
+```
+
+```md:no-v-pre
+<!-- 这里会被 Vue 编译 -->
+1 + 2 + 3 = {{ 1 + 2 + 3 }}
+```
+
+```js:no-v-pre
+// 由于 JS 代码高亮，这里不会被正确编译
+const onePlusTwoPlusThree = {{ 1 + 2 + 3 }}
+```
+
+### 导入代码块
+<!-- 最简单的语法 -->
+@[code](./MyBlog/test.md)
+
+<!-- 仅导入第 1 行至第 5 行 -->
+@[code{1-5}](./MyBlog/index.ts)
+
+@[code{1-10} ts{1,3,5}](@vuepress/my-config.ts)
+
+### 模板语法
+
+##### 输入：
+``` vue
+一加一等于： {{ 1 + 1 }}
+
+<span v-for="i in 3"> span: {{ i }} </span> 
+
+```
+##### 输出：
+一加一等于： {{ 1 + 1 }}
+
+<span v-for="i in 3"> span: {{ i }} </span> 
+
+###  默认主题参考
+#### 自定义容器
+
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个 details 标签
+:::
+
+####  内置组件，  Badge
+
+- VuePress - <Badge type="tip" text="v2" vertical="top" />
+- VuePress - <Badge type="warning" text="v2" vertical="middle" />
+- VuePress - <Badge type="danger" text="v2" vertical="bottom" />
+
+#### codeGroupItem
+
+<CodeGroup>
+  <CodeGroupItem title="YARN">
+
+```bash:no-line-numbers
+yarn
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="NPM" active>
+
+```bash:no-line-numbers
+npm install
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
+
+
+### 使用 geoJSON 创建地图
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [-90,35],
+              [-90,30],
+              [-85,30],
+              [-85,35],
+              [-90,35]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
+
 ### 注意
 
 - 请留意目录名的大写。
