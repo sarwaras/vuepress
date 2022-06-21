@@ -185,10 +185,100 @@ npm install
 </CodeGroup>
 
 
+### 引入图片
+
+![](./MyBlog/sky.png)
+
+###  静态资源部分 --  base Helper
+
+
+<!-- ![VuePress Logo](/docs/MyBlog/images/4.png)
+<img :src="$withBase('/docs/MyBlog/images/4.png')" alt="VuePress Logo"></img> -->
+
+
+### 图形-- 扇形图 
+
+::: echarts 一个基础南丁格尔玫瑰图案例
+
+```json
+{
+  "legend": {
+    "top": "bottom"
+  },
+  "toolbox": {
+    "show": true,
+    "feature": {
+      "mark": {
+        "show": true
+      },
+      "dataView": {
+        "show": true,
+        "readOnly": false
+      },
+      "restore": {
+        "show": true
+      },
+      "saveAsImage": {
+        "show": true
+      }
+    }
+  },
+  "series": [
+    {
+      "name": "Nightingale Chart",
+      "type": "pie",
+      "radius": [20, 100],
+      "center": ["50%", "50%"],
+      "roseType": "area",
+      "itemStyle": {
+        "borderRadius": 8
+      },
+      "data": [
+        {
+          "value": 40,
+          "name": "rose 1"
+        },
+        {
+          "value": 38,
+          "name": "rose 2"
+        },
+        {
+          "value": 32,
+          "name": "rose 3"
+        },
+        {
+          "value": 30,
+          "name": "rose 4"
+        },
+        {
+          "value": 28,
+          "name": "rose 5"
+        },
+        {
+          "value": 26,
+          "name": "rose 6"
+        },
+        {
+          "value": 22,
+          "name": "rose 7"
+        },
+        {
+          "value": 18,
+          "name": "rose 8"
+        }
+      ]
+    }
+  ]
+}
+```
+
+:::
+
+
 
 ### 使用 geoJSON 创建地图
 
-```geojson
+```geoJSON
 {
   "type": "FeatureCollection",
   "features": [
