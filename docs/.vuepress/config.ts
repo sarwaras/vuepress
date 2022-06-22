@@ -77,8 +77,8 @@ export default defineUserConfig({
     logo: "/images/Twitter-logo.svg",
     darkLogo: "/images/logo-dark.svg",
     // 背景图片
-    backgroundImage: "https://raw.githubusercontent.com/sarwaras/vuepress/master/docs/MyBlog/sky.png",
-    darkBackgroundImage: "/images/bg-dark.jpg",
+    backgroundImage: "/images/sky.png",
+    darkBackgroundImage: "/images/avatar-dark.jpg",
     // 文章简介图片
     postImage: "https://v2.vuepress.vuejs.org/images/hero.png",
     darkPostImage: "/images/post-dark.svg",
