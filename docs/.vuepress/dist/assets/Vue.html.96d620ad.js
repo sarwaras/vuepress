@@ -1,0 +1,1 @@
+import{_ as t,o as _,c as o,a as e}from"./app.833766a3.js";const s={},n=e("h1",null,"Vue \u6A21\u5757",-1),c=e("h3",null,"vue",-1),l=e("h3",null,"vue2",-1),u=e("h3",null,"vue3",-1),a=[n,c,l,u];function r(h,d){return _(),o("div",null,a)}var f=t(s,[["render",r],["__file","Vue.html.vue"]]);export{f as default};
