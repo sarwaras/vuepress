@@ -1,4 +1,6 @@
-# hi ~
+# Hi~
+
+![](./study/images/2.jpg)
 ## hello vuepress
 
 ### 创建表格
@@ -45,7 +47,7 @@
 ### 表情
 VuePress 2 已经发布 :tada: ！
 
-祝一切顺利！ :grinning:
+祝一切顺利！ :tada: ！:tada: ！:tada: ！ :grinning:
 
 # 一级标题
 ## 二级标题
