@@ -138,7 +138,7 @@ export default defineUserConfig({
     },
   }),
 
-  //  插件的使用
+  //  插件的使用  (在这使用的是 谷歌的插件，  其他插件的使用原理也是一样的)
   plugins: [
     googleAnalyticsPlugin({
       id: "G-XXXXXXXXXX",
