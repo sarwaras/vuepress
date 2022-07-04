@@ -1,6 +1,6 @@
 # Hi~
 
-![](./study/images/2.jpg)
+<!-- ![](./study/images/2.jpg) -->
 ## hello vuepress
 
 ### 创建表格
