@@ -1,4 +1,4 @@
-<template><div><h1>JS 模块</h1>
+<template><div><h1>javascript</h1>
 <h2>JS 基础篇</h2>
 <h3>一、数组常用方法</h3>
 <ol>
