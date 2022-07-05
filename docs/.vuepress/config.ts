@@ -105,8 +105,10 @@ export default defineUserConfig({
     // logo
     logo: "/images/Twitter-logo.svg",
     darkLogo: "/images/logo-dark.svg",
+
     // 背景图片
     backgroundImage: "/images/sky.png",
+    //   夜间模式下的背景图片
     darkBackgroundImage: "/images/avatar-dark.jpg",
     // 文章简介图片
     postImage: "https://v2.vuepress.vuejs.org/images/hero.png",
@@ -168,6 +170,10 @@ export default defineUserConfig({
       {
         text: "React",
         link: "/MyBlog/React.md",
+      },
+      {
+        text: "README",
+        link: "/README.md",
       },
     ],
 

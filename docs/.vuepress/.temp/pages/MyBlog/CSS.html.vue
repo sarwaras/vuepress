@@ -2019,7 +2019,9 @@ background-repeat:no-repeat;
 </tr>
 </tbody>
 </table>
-<p>纵有疾风起，人生不言弃。
+<p>:danger:
+纵有疾风起，人生不言弃。
 选择了努力，就要持续坚持。</p>
 <h2>在这介绍各种样式的实现</h2>
+<h1>高级</h1>
 </div></template>

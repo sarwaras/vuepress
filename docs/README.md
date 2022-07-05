@@ -73,6 +73,22 @@ export default defineUserConfig({
 * note:  行数范围标记的例子：
 
 - 行数范围： {5-8}
+```js
+
+  add(title) {
+    this.state.todos.push({
+      title,
+    });
+  }
+  has(title) {
+    return this.state.todos.some((todo) => todo.title === title);
+  }
+  remove(title) {
+    const index = this.state.todos.findIndex((todo) => todo.title === title);
+    this.state.todos.splice(index, 1);
+  }
+
+```
 - 多个单行： {4,7,9}
 - 组合： {4,7-13,16,23-27,40}
 
@@ -173,7 +189,7 @@ const onePlusTwoPlusThree = {{ 1 + 2 + 3 }}
   <CodeGroupItem title="YARN">
 
 ```bash:no-line-numbers
-yarn
+   yarn
 ```
 
   </CodeGroupItem>
@@ -181,7 +197,7 @@ yarn
   <CodeGroupItem title="NPM" active>
 
 ```bash:no-line-numbers
-npm install
+   npm install
 ```
 
   </CodeGroupItem>

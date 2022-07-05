@@ -1,3 +1,0 @@
-# Study
-
-![](./images/xcy.png)

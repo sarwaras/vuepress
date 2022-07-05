@@ -87,6 +87,22 @@
 </ul>
 <ul>
 <li>行数范围： {5-8}</li>
+</ul>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code>
+  <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">title</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      title<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">has</span><span class="token punctuation">(</span><span class="token parameter">title</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=></span> todo<span class="token punctuation">.</span>title <span class="token operator">===</span> title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">remove</span><span class="token punctuation">(</span><span class="token parameter">title</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">findIndex</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">todo</span><span class="token punctuation">)</span> <span class="token operator">=></span> todo<span class="token punctuation">.</span>title <span class="token operator">===</span> title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>多个单行： {4,7,9}</li>
 <li>组合： {4,7-13,16,23-27,40}</li>
 </ul>
@@ -116,13 +132,7 @@
 <span class="token keyword">const</span> onePlusTwoPlusThree <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3>导入代码块</h3>
 <!-- 最简单的语法 -->
-<div class="language-markdown ext-md line-numbers-mode"><pre v-pre class="language-markdown"><code><span class="token title important"><span class="token punctuation">#</span>  HTML 基础</span>
-<span class="token title important"><span class="token punctuation">###</span> 一、HTML 概述</span>
-
-<span class="token title important"><span class="token punctuation">###</span> 二、HTML5简介</span>
-<span class="token title important"><span class="token punctuation">###</span> 三、</span>
-
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><!-- 仅导入第 1 行至第 5 行 -->
+<div class="language-markdown ext-md line-numbers-mode"><pre v-pre class="language-markdown"><code>File not found</code></pre><div class="line-numbers" aria-hidden="true"></div></div><!-- 仅导入第 1 行至第 5 行 -->
 <div class="language-typescript ext-ts line-numbers-mode"><pre v-pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineClientConfig<span class="token punctuation">,</span> usePagesData <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@vuepress/client"</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineClientConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
@@ -159,10 +169,10 @@
 <h4>codeGroupItem</h4>
 <CodeGroup>
   <CodeGroupItem title="YARN">
-<div class="language-bash ext-sh"><pre v-pre class="language-bash"><code><span class="token function">yarn</span>
+<div class="language-bash ext-sh"><pre v-pre class="language-bash"><code>   <span class="token function">yarn</span>
 </code></pre></div>  </CodeGroupItem>
   <CodeGroupItem title="NPM" active>
-<div class="language-bash ext-sh"><pre v-pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span>
+<div class="language-bash ext-sh"><pre v-pre class="language-bash"><code>   <span class="token function">npm</span> <span class="token function">install</span>
 </code></pre></div>  </CodeGroupItem>
 </CodeGroup>
 <h3>引入图片</h3>
